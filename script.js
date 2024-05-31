@@ -10,12 +10,12 @@ const minutes = data.getMinutes();
 
 message.innerHTML = `Hora atual - ${hora}h${minutes}`;
 
-if(hora >= 0 && hora <=12){
+if(hora >= 0 && hora <=11){
     photo.src = "img/dia.png";
     saudation.innerHTML = `Bom dia! ⛅`;
     window.document.body.style.background = "rgb(0, 58, 112)";
     section.style.background = "rgb(27, 0, 77)";
-}else if(hora <= 18){
+}else if(hora <= 17){
     photo.src = "img/tarde.png";
     saudation.innerHTML = `Boa tarde! ☀️`;
     window.document.body.style.background = "rgb(248, 170, 0)";
